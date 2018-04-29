@@ -1,0 +1,668 @@
+[Sat Apr 28 22:17:48.566606 2018] [wsgi:error] [pid 16627:tid 139944857134848] [client 146.112.252.218:49241] mod_wsgi (pid=16627): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sat Apr 28 22:17:48.566677 2018] [wsgi:error] [pid 16627:tid 139944857134848] [client 146.112.252.218:49241] mod_wsgi (pid=16627): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sat Apr 28 22:17:48.566699 2018] [wsgi:error] [pid 16627:tid 139944857134848] [client 146.112.252.218:49241] Traceback (most recent call last):
+[Sat Apr 28 22:17:48.566721 2018] [wsgi:error] [pid 16627:tid 139944857134848] [client 146.112.252.218:49241]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sat Apr 28 22:17:48.566783 2018] [wsgi:error] [pid 16627:tid 139944857134848] [client 146.112.252.218:49241]     from routes import app as application
+[Sat Apr 28 22:17:48.566797 2018] [wsgi:error] [pid 16627:tid 139944857134848] [client 146.112.252.218:49241]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 1, in <module>
+[Sat Apr 28 22:17:48.566830 2018] [wsgi:error] [pid 16627:tid 139944857134848] [client 146.112.252.218:49241]     from app import app
+[Sat Apr 28 22:17:48.566851 2018] [wsgi:error] [pid 16627:tid 139944857134848] [client 146.112.252.218:49241] ImportError: No module named app
+[Sat Apr 28 22:21:14.522039 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691] [2018-04-28 22:21:14,510] ERROR in app: Exception on / [GET]
+[Sat Apr 28 22:21:14.522087 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691] Traceback (most recent call last):
+[Sat Apr 28 22:21:14.522092 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sat Apr 28 22:21:14.522096 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     response = self.full_dispatch_request()
+[Sat Apr 28 22:21:14.522100 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sat Apr 28 22:21:14.522104 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     rv = self.handle_user_exception(e)
+[Sat Apr 28 22:21:14.522108 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sat Apr 28 22:21:14.522112 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     reraise(exc_type, exc_value, tb)
+[Sat Apr 28 22:21:14.522116 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sat Apr 28 22:21:14.522119 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     rv = self.dispatch_request()
+[Sat Apr 28 22:21:14.522123 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sat Apr 28 22:21:14.522127 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sat Apr 28 22:21:14.522131 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sat Apr 28 22:21:14.522134 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     return render_template('index.html')
+[Sat Apr 28 22:21:14.522138 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sat Apr 28 22:21:14.522157 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     context, ctx.app)
+[Sat Apr 28 22:21:14.522161 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sat Apr 28 22:21:14.522164 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     rv = template.render(context)
+[Sat Apr 28 22:21:14.522167 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sat Apr 28 22:21:14.522171 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     return self.environment.handle_exception(exc_info, True)
+[Sat Apr 28 22:21:14.522174 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sat Apr 28 22:21:14.522177 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     reraise(exc_type, exc_value, tb)
+[Sat Apr 28 22:21:14.522181 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 40, in top-level template code
+[Sat Apr 28 22:21:14.522184 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     <form role="form" method="POST" action="{{ url_for('calculate') }}">
+[Sat Apr 28 22:21:14.522187 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/usr/local/lib/python2.7/dist-packages/flask/helpers.py", line 333, in url_for
+[Sat Apr 28 22:21:14.522191 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     return appctx.app.handle_url_build_error(error, endpoint, values)
+[Sat Apr 28 22:21:14.522194 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1805, in handle_url_build_error
+[Sat Apr 28 22:21:14.522197 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     reraise(exc_type, exc_value, tb)
+[Sat Apr 28 22:21:14.522200 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/usr/local/lib/python2.7/dist-packages/flask/helpers.py", line 323, in url_for
+[Sat Apr 28 22:21:14.522204 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     force_external=external)
+[Sat Apr 28 22:21:14.522207 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]   File "/usr/local/lib/python2.7/dist-packages/werkzeug/routing.py", line 1776, in build
+[Sat Apr 28 22:21:14.522210 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691]     raise BuildError(endpoint, values, method, self)
+[Sat Apr 28 22:21:14.522213 2018] [wsgi:error] [pid 16796:tid 139945016940288] [client 146.112.252.218:41691] BuildError: Could not build url for endpoint 'calculate'. Did you mean 'static' instead?
+[Sun Apr 29 06:18:31.023927 2018] [wsgi:error] [pid 22056:tid 139944815171328] [client 146.112.252.218:44438] mod_wsgi (pid=22056): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 06:18:31.024000 2018] [wsgi:error] [pid 22056:tid 139944815171328] [client 146.112.252.218:44438] mod_wsgi (pid=22056): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 06:18:31.024040 2018] [wsgi:error] [pid 22056:tid 139944815171328] [client 146.112.252.218:44438] Traceback (most recent call last):
+[Sun Apr 29 06:18:31.024074 2018] [wsgi:error] [pid 22056:tid 139944815171328] [client 146.112.252.218:44438]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 06:18:31.024157 2018] [wsgi:error] [pid 22056:tid 139944815171328] [client 146.112.252.218:44438]     from routes import app as application
+[Sun Apr 29 06:18:31.024193 2018] [wsgi:error] [pid 22056:tid 139944815171328] [client 146.112.252.218:44438]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 06:18:31.024265 2018] [wsgi:error] [pid 22056:tid 139944815171328] [client 146.112.252.218:44438]     readFile = open('chatdata.csv','r');
+[Sun Apr 29 06:18:31.024300 2018] [wsgi:error] [pid 22056:tid 139944815171328] [client 146.112.252.218:44438] IOError: [Errno 2] No such file or directory: 'chatdata.csv'
+[Sun Apr 29 06:20:16.431568 2018] [wsgi:error] [pid 22154:tid 139945016940288] [client 146.112.252.218:35881] mod_wsgi (pid=22154): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 06:20:16.431617 2018] [wsgi:error] [pid 22154:tid 139945016940288] [client 146.112.252.218:35881] mod_wsgi (pid=22154): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 06:20:16.431645 2018] [wsgi:error] [pid 22154:tid 139945016940288] [client 146.112.252.218:35881] Traceback (most recent call last):
+[Sun Apr 29 06:20:16.431668 2018] [wsgi:error] [pid 22154:tid 139945016940288] [client 146.112.252.218:35881]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 06:20:16.431721 2018] [wsgi:error] [pid 22154:tid 139945016940288] [client 146.112.252.218:35881]     from routes import app as application
+[Sun Apr 29 06:20:16.431734 2018] [wsgi:error] [pid 22154:tid 139945016940288] [client 146.112.252.218:35881]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 06:20:16.431777 2018] [wsgi:error] [pid 22154:tid 139945016940288] [client 146.112.252.218:35881]     readFile = open('chatdata.csv','r');
+[Sun Apr 29 06:20:16.431812 2018] [wsgi:error] [pid 22154:tid 139945016940288] [client 146.112.252.218:35881] IOError: [Errno 2] No such file or directory: 'chatdata.csv'
+[Sun Apr 29 06:20:19.111455 2018] [wsgi:error] [pid 22153:tid 139944823564032] [client 146.112.252.218:59072] mod_wsgi (pid=22153): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 06:20:19.111510 2018] [wsgi:error] [pid 22153:tid 139944823564032] [client 146.112.252.218:59072] mod_wsgi (pid=22153): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 06:20:19.111541 2018] [wsgi:error] [pid 22153:tid 139944823564032] [client 146.112.252.218:59072] Traceback (most recent call last):
+[Sun Apr 29 06:20:19.111564 2018] [wsgi:error] [pid 22153:tid 139944823564032] [client 146.112.252.218:59072]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 06:20:19.111622 2018] [wsgi:error] [pid 22153:tid 139944823564032] [client 146.112.252.218:59072]     from routes import app as application
+[Sun Apr 29 06:20:19.111637 2018] [wsgi:error] [pid 22153:tid 139944823564032] [client 146.112.252.218:59072]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 06:20:19.111681 2018] [wsgi:error] [pid 22153:tid 139944823564032] [client 146.112.252.218:59072]     readFile = open('chatdata.csv','r');
+[Sun Apr 29 06:20:19.111706 2018] [wsgi:error] [pid 22153:tid 139944823564032] [client 146.112.252.218:59072] IOError: [Errno 2] No such file or directory: 'chatdata.csv'
+[Sun Apr 29 06:20:44.455863 2018] [wsgi:error] [pid 22153:tid 139944806778624] [client 146.112.252.218:33669] mod_wsgi (pid=22153): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 06:20:44.455921 2018] [wsgi:error] [pid 22153:tid 139944806778624] [client 146.112.252.218:33669] mod_wsgi (pid=22153): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 06:20:44.455972 2018] [wsgi:error] [pid 22153:tid 139944806778624] [client 146.112.252.218:33669] Traceback (most recent call last):
+[Sun Apr 29 06:20:44.456004 2018] [wsgi:error] [pid 22153:tid 139944806778624] [client 146.112.252.218:33669]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 06:20:44.456050 2018] [wsgi:error] [pid 22153:tid 139944806778624] [client 146.112.252.218:33669]     from routes import app as application
+[Sun Apr 29 06:20:44.456069 2018] [wsgi:error] [pid 22153:tid 139944806778624] [client 146.112.252.218:33669]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 06:20:44.456096 2018] [wsgi:error] [pid 22153:tid 139944806778624] [client 146.112.252.218:33669]     readFile = open('chatdata.csv','r');
+[Sun Apr 29 06:20:44.456125 2018] [wsgi:error] [pid 22153:tid 139944806778624] [client 146.112.252.218:33669] IOError: [Errno 2] No such file or directory: 'chatdata.csv'
+[Sun Apr 29 06:20:56.484314 2018] [wsgi:error] [pid 22305:tid 139944907491072] [client 146.112.252.218:38457] mod_wsgi (pid=22305): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 06:20:56.484383 2018] [wsgi:error] [pid 22305:tid 139944907491072] [client 146.112.252.218:38457] mod_wsgi (pid=22305): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 06:20:56.484421 2018] [wsgi:error] [pid 22305:tid 139944907491072] [client 146.112.252.218:38457] Traceback (most recent call last):
+[Sun Apr 29 06:20:56.484453 2018] [wsgi:error] [pid 22305:tid 139944907491072] [client 146.112.252.218:38457]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 06:20:56.484532 2018] [wsgi:error] [pid 22305:tid 139944907491072] [client 146.112.252.218:38457]     from routes import app as application
+[Sun Apr 29 06:20:56.484552 2018] [wsgi:error] [pid 22305:tid 139944907491072] [client 146.112.252.218:38457]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 06:20:56.484619 2018] [wsgi:error] [pid 22305:tid 139944907491072] [client 146.112.252.218:38457]     readFile = open('chatdata.csv','r');
+[Sun Apr 29 06:20:56.484654 2018] [wsgi:error] [pid 22305:tid 139944907491072] [client 146.112.252.218:38457] IOError: [Errno 2] No such file or directory: 'chatdata.csv'
+[Sun Apr 29 06:20:58.135891 2018] [wsgi:error] [pid 22304:tid 139945016940288] [client 146.112.252.218:33190] mod_wsgi (pid=22304): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 06:20:58.135943 2018] [wsgi:error] [pid 22304:tid 139945016940288] [client 146.112.252.218:33190] mod_wsgi (pid=22304): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 06:20:58.135974 2018] [wsgi:error] [pid 22304:tid 139945016940288] [client 146.112.252.218:33190] Traceback (most recent call last):
+[Sun Apr 29 06:20:58.135998 2018] [wsgi:error] [pid 22304:tid 139945016940288] [client 146.112.252.218:33190]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 06:20:58.136057 2018] [wsgi:error] [pid 22304:tid 139945016940288] [client 146.112.252.218:33190]     from routes import app as application
+[Sun Apr 29 06:20:58.136072 2018] [wsgi:error] [pid 22304:tid 139945016940288] [client 146.112.252.218:33190]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 06:20:58.136117 2018] [wsgi:error] [pid 22304:tid 139945016940288] [client 146.112.252.218:33190]     readFile = open('chatdata.csv','r');
+[Sun Apr 29 06:20:58.136143 2018] [wsgi:error] [pid 22304:tid 139945016940288] [client 146.112.252.218:33190] IOError: [Errno 2] No such file or directory: 'chatdata.csv'
+[Sun Apr 29 06:22:05.262066 2018] [wsgi:error] [pid 22304:tid 139945008547584] [client 146.112.252.218:57574] mod_wsgi (pid=22304): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 06:22:05.262115 2018] [wsgi:error] [pid 22304:tid 139945008547584] [client 146.112.252.218:57574] mod_wsgi (pid=22304): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 06:22:05.262138 2018] [wsgi:error] [pid 22304:tid 139945008547584] [client 146.112.252.218:57574] Traceback (most recent call last):
+[Sun Apr 29 06:22:05.262157 2018] [wsgi:error] [pid 22304:tid 139945008547584] [client 146.112.252.218:57574]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 06:22:05.262187 2018] [wsgi:error] [pid 22304:tid 139945008547584] [client 146.112.252.218:57574]     from routes import app as application
+[Sun Apr 29 06:22:05.262196 2018] [wsgi:error] [pid 22304:tid 139945008547584] [client 146.112.252.218:57574]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 06:22:05.262209 2018] [wsgi:error] [pid 22304:tid 139945008547584] [client 146.112.252.218:57574]     readFile = open('chatdata.csv','r');
+[Sun Apr 29 06:22:05.262228 2018] [wsgi:error] [pid 22304:tid 139945008547584] [client 146.112.252.218:57574] IOError: [Errno 2] No such file or directory: 'chatdata.csv'
+[Sun Apr 29 06:23:02.284904 2018] [wsgi:error] [pid 22427:tid 139945016940288] [client 146.112.252.218:45053] mod_wsgi (pid=22427): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 06:23:02.284956 2018] [wsgi:error] [pid 22427:tid 139945016940288] [client 146.112.252.218:45053] mod_wsgi (pid=22427): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 06:23:02.284985 2018] [wsgi:error] [pid 22427:tid 139945016940288] [client 146.112.252.218:45053] Traceback (most recent call last):
+[Sun Apr 29 06:23:02.285007 2018] [wsgi:error] [pid 22427:tid 139945016940288] [client 146.112.252.218:45053]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 06:23:02.285061 2018] [wsgi:error] [pid 22427:tid 139945016940288] [client 146.112.252.218:45053]     from routes import app as application
+[Sun Apr 29 06:23:02.285074 2018] [wsgi:error] [pid 22427:tid 139945016940288] [client 146.112.252.218:45053]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 06:23:02.285116 2018] [wsgi:error] [pid 22427:tid 139945016940288] [client 146.112.252.218:45053]     readFile = open('chatdata.csv','r');
+[Sun Apr 29 06:23:02.285138 2018] [wsgi:error] [pid 22427:tid 139945016940288] [client 146.112.252.218:45053] IOError: [Errno 2] No such file or directory: 'chatdata.csv'
+[Sun Apr 29 06:23:04.178982 2018] [wsgi:error] [pid 22427:tid 139945008547584] [client 146.112.252.218:39257] mod_wsgi (pid=22427): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 06:23:04.179038 2018] [wsgi:error] [pid 22427:tid 139945008547584] [client 146.112.252.218:39257] mod_wsgi (pid=22427): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 06:23:04.179067 2018] [wsgi:error] [pid 22427:tid 139945008547584] [client 146.112.252.218:39257] Traceback (most recent call last):
+[Sun Apr 29 06:23:04.179095 2018] [wsgi:error] [pid 22427:tid 139945008547584] [client 146.112.252.218:39257]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 06:23:04.179133 2018] [wsgi:error] [pid 22427:tid 139945008547584] [client 146.112.252.218:39257]     from routes import app as application
+[Sun Apr 29 06:23:04.179148 2018] [wsgi:error] [pid 22427:tid 139945008547584] [client 146.112.252.218:39257]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 06:23:04.179249 2018] [wsgi:error] [pid 22427:tid 139945008547584] [client 146.112.252.218:39257]     readFile = open('chatdata.csv','r');
+[Sun Apr 29 06:23:04.179279 2018] [wsgi:error] [pid 22427:tid 139945008547584] [client 146.112.252.218:39257] IOError: [Errno 2] No such file or directory: 'chatdata.csv'
+[Sun Apr 29 06:24:05.400140 2018] [wsgi:error] [pid 22504:tid 139944857134848] [client 146.112.252.218:49916] mod_wsgi (pid=22504): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 06:24:05.400196 2018] [wsgi:error] [pid 22504:tid 139944857134848] [client 146.112.252.218:49916] mod_wsgi (pid=22504): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 06:24:05.400225 2018] [wsgi:error] [pid 22504:tid 139944857134848] [client 146.112.252.218:49916] Traceback (most recent call last):
+[Sun Apr 29 06:24:05.400247 2018] [wsgi:error] [pid 22504:tid 139944857134848] [client 146.112.252.218:49916]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 06:24:05.400305 2018] [wsgi:error] [pid 22504:tid 139944857134848] [client 146.112.252.218:49916]     from routes import app as application
+[Sun Apr 29 06:24:05.400318 2018] [wsgi:error] [pid 22504:tid 139944857134848] [client 146.112.252.218:49916]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 06:24:05.400360 2018] [wsgi:error] [pid 22504:tid 139944857134848] [client 146.112.252.218:49916]     readFile = open('chatdata.csv','r');
+[Sun Apr 29 06:24:05.400383 2018] [wsgi:error] [pid 22504:tid 139944857134848] [client 146.112.252.218:49916] IOError: [Errno 2] No such file or directory: 'chatdata.csv'
+[Sun Apr 29 06:24:57.214182 2018] [wsgi:error] [pid 22610:tid 139944773207808] [client 146.112.252.218:43702] mod_wsgi (pid=22610): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 06:24:57.214250 2018] [wsgi:error] [pid 22610:tid 139944773207808] [client 146.112.252.218:43702] mod_wsgi (pid=22610): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 06:24:57.214289 2018] [wsgi:error] [pid 22610:tid 139944773207808] [client 146.112.252.218:43702] Traceback (most recent call last):
+[Sun Apr 29 06:24:57.214322 2018] [wsgi:error] [pid 22610:tid 139944773207808] [client 146.112.252.218:43702]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 06:24:57.214401 2018] [wsgi:error] [pid 22610:tid 139944773207808] [client 146.112.252.218:43702]     from routes import app as application
+[Sun Apr 29 06:24:57.214421 2018] [wsgi:error] [pid 22610:tid 139944773207808] [client 146.112.252.218:43702]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 06:24:57.214492 2018] [wsgi:error] [pid 22610:tid 139944773207808] [client 146.112.252.218:43702]     readFile = open('chatdata.csv','r');
+[Sun Apr 29 06:24:57.214527 2018] [wsgi:error] [pid 22610:tid 139944773207808] [client 146.112.252.218:43702] IOError: [Errno 2] No such file or directory: 'chatdata.csv'
+[Sun Apr 29 06:24:58.912813 2018] [wsgi:error] [pid 22611:tid 139945016940288] [client 146.112.252.218:43232] mod_wsgi (pid=22611): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 06:24:58.912865 2018] [wsgi:error] [pid 22611:tid 139945016940288] [client 146.112.252.218:43232] mod_wsgi (pid=22611): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 06:24:58.912895 2018] [wsgi:error] [pid 22611:tid 139945016940288] [client 146.112.252.218:43232] Traceback (most recent call last):
+[Sun Apr 29 06:24:58.912918 2018] [wsgi:error] [pid 22611:tid 139945016940288] [client 146.112.252.218:43232]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 06:24:58.912990 2018] [wsgi:error] [pid 22611:tid 139945016940288] [client 146.112.252.218:43232]     from routes import app as application
+[Sun Apr 29 06:24:58.913005 2018] [wsgi:error] [pid 22611:tid 139945016940288] [client 146.112.252.218:43232]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 06:24:58.913048 2018] [wsgi:error] [pid 22611:tid 139945016940288] [client 146.112.252.218:43232]     readFile = open('chatdata.csv','r');
+[Sun Apr 29 06:24:58.913073 2018] [wsgi:error] [pid 22611:tid 139945016940288] [client 146.112.252.218:43232] IOError: [Errno 2] No such file or directory: 'chatdata.csv'
+[Sun Apr 29 06:26:41.269370 2018] [wsgi:error] [pid 22956:tid 139945016940288] [client 146.112.252.218:39911] mod_wsgi (pid=22956): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 06:26:41.269420 2018] [wsgi:error] [pid 22956:tid 139945016940288] [client 146.112.252.218:39911] mod_wsgi (pid=22956): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 06:26:41.269448 2018] [wsgi:error] [pid 22956:tid 139945016940288] [client 146.112.252.218:39911] Traceback (most recent call last):
+[Sun Apr 29 06:26:41.269471 2018] [wsgi:error] [pid 22956:tid 139945016940288] [client 146.112.252.218:39911]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 06:26:41.269526 2018] [wsgi:error] [pid 22956:tid 139945016940288] [client 146.112.252.218:39911]     from routes import app as application
+[Sun Apr 29 06:26:41.269539 2018] [wsgi:error] [pid 22956:tid 139945016940288] [client 146.112.252.218:39911]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 06:26:41.269582 2018] [wsgi:error] [pid 22956:tid 139945016940288] [client 146.112.252.218:39911]     readFile = open('/static/chatdata.csv','r');
+[Sun Apr 29 06:26:41.269605 2018] [wsgi:error] [pid 22956:tid 139945016940288] [client 146.112.252.218:39911] IOError: [Errno 2] No such file or directory: '/static/chatdata.csv'
+[Sun Apr 29 06:29:28.824008 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067] [2018-04-29 06:29:28,821] ERROR in app: Exception on / [GET]
+[Sun Apr 29 06:29:28.824047 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067] Traceback (most recent call last):
+[Sun Apr 29 06:29:28.824053 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 06:29:28.824060 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]     response = self.full_dispatch_request()
+[Sun Apr 29 06:29:28.824066 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 06:29:28.824072 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]     rv = self.handle_user_exception(e)
+[Sun Apr 29 06:29:28.824078 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 06:29:28.824084 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 06:29:28.824090 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 06:29:28.824096 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]     rv = self.dispatch_request()
+[Sun Apr 29 06:29:28.824102 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 06:29:28.824128 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 06:29:28.824133 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sun Apr 29 06:29:28.824139 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]     return render_template('index.html',people=names)
+[Sun Apr 29 06:29:28.824144 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 06:29:28.824149 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]     context, ctx.app)
+[Sun Apr 29 06:29:28.824154 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 06:29:28.824159 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]     rv = template.render(context)
+[Sun Apr 29 06:29:28.824164 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 06:29:28.824169 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 06:29:28.824174 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 06:29:28.824180 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 06:29:28.824185 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 21, in top-level template code
+[Sun Apr 29 06:29:28.824190 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067]     <a class="venus" title="venus" href="#venusspeed">{{people[2]}}</a>
+[Sun Apr 29 06:29:28.824195 2018] [wsgi:error] [pid 23084:tid 139944840349440] [client 146.112.252.218:44067] UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)
+[Sun Apr 29 06:29:52.647225 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786] [2018-04-29 06:29:52,645] ERROR in app: Exception on / [GET]
+[Sun Apr 29 06:29:52.647257 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786] Traceback (most recent call last):
+[Sun Apr 29 06:29:52.647261 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 06:29:52.647265 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]     response = self.full_dispatch_request()
+[Sun Apr 29 06:29:52.647269 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 06:29:52.647273 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]     rv = self.handle_user_exception(e)
+[Sun Apr 29 06:29:52.647276 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 06:29:52.647280 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 06:29:52.647283 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 06:29:52.647304 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]     rv = self.dispatch_request()
+[Sun Apr 29 06:29:52.647308 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 06:29:52.647311 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 06:29:52.647314 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sun Apr 29 06:29:52.647318 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]     return render_template('index.html',people=names)
+[Sun Apr 29 06:29:52.647321 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 06:29:52.647324 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]     context, ctx.app)
+[Sun Apr 29 06:29:52.647327 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 06:29:52.647331 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]     rv = template.render(context)
+[Sun Apr 29 06:29:52.647334 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 06:29:52.647337 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 06:29:52.647341 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 06:29:52.647344 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 06:29:52.647347 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 21, in top-level template code
+[Sun Apr 29 06:29:52.647351 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786]     <a class="venus" title="venus" href="#venusspeed">{{people[2]}}</a>
+[Sun Apr 29 06:29:52.647354 2018] [wsgi:error] [pid 23230:tid 139944823564032] [client 146.112.252.218:46786] UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)
+[Sun Apr 29 06:29:54.351304 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965] [2018-04-29 06:29:54,350] ERROR in app: Exception on / [GET]
+[Sun Apr 29 06:29:54.351342 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965] Traceback (most recent call last):
+[Sun Apr 29 06:29:54.351346 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 06:29:54.351350 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]     response = self.full_dispatch_request()
+[Sun Apr 29 06:29:54.351354 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 06:29:54.351357 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]     rv = self.handle_user_exception(e)
+[Sun Apr 29 06:29:54.351370 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 06:29:54.351373 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 06:29:54.351376 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 06:29:54.351380 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]     rv = self.dispatch_request()
+[Sun Apr 29 06:29:54.351383 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 06:29:54.351386 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 06:29:54.351390 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sun Apr 29 06:29:54.351393 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]     return render_template('index.html',people=names)
+[Sun Apr 29 06:29:54.351396 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 06:29:54.351400 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]     context, ctx.app)
+[Sun Apr 29 06:29:54.351403 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 06:29:54.351406 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]     rv = template.render(context)
+[Sun Apr 29 06:29:54.351409 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 06:29:54.351413 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 06:29:54.351416 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 06:29:54.351419 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 06:29:54.351422 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 21, in top-level template code
+[Sun Apr 29 06:29:54.351426 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965]     <a class="venus" title="venus" href="#venusspeed">{{people[2]}}</a>
+[Sun Apr 29 06:29:54.351429 2018] [wsgi:error] [pid 23230:tid 139944806778624] [client 146.112.252.197:60965] UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)
+[Sun Apr 29 06:29:56.366526 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632] [2018-04-29 06:29:56,364] ERROR in app: Exception on / [GET]
+[Sun Apr 29 06:29:56.366556 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632] Traceback (most recent call last):
+[Sun Apr 29 06:29:56.366560 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 06:29:56.366564 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]     response = self.full_dispatch_request()
+[Sun Apr 29 06:29:56.366578 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 06:29:56.366582 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]     rv = self.handle_user_exception(e)
+[Sun Apr 29 06:29:56.366585 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 06:29:56.366589 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 06:29:56.366592 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 06:29:56.366595 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]     rv = self.dispatch_request()
+[Sun Apr 29 06:29:56.366598 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 06:29:56.366602 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 06:29:56.366605 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sun Apr 29 06:29:56.366608 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]     return render_template('index.html',people=names)
+[Sun Apr 29 06:29:56.366612 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 06:29:56.366615 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]     context, ctx.app)
+[Sun Apr 29 06:29:56.366618 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 06:29:56.366622 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]     rv = template.render(context)
+[Sun Apr 29 06:29:56.366625 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 06:29:56.366628 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 06:29:56.366631 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 06:29:56.366635 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 06:29:56.366638 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 21, in top-level template code
+[Sun Apr 29 06:29:56.366641 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632]     <a class="venus" title="venus" href="#venusspeed">{{people[2]}}</a>
+[Sun Apr 29 06:29:56.366645 2018] [wsgi:error] [pid 23231:tid 139944907491072] [client 146.112.252.197:55632] UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)
+[Sun Apr 29 06:57:21.377687 2018] [wsgi:error] [pid 23827:tid 139944907491072] [client 146.112.252.218:51473] mod_wsgi (pid=23827): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 06:57:21.377760 2018] [wsgi:error] [pid 23827:tid 139944907491072] [client 146.112.252.218:51473] mod_wsgi (pid=23827): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 06:57:21.377789 2018] [wsgi:error] [pid 23827:tid 139944907491072] [client 146.112.252.218:51473] Traceback (most recent call last):
+[Sun Apr 29 06:57:21.377812 2018] [wsgi:error] [pid 23827:tid 139944907491072] [client 146.112.252.218:51473]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 06:57:21.377870 2018] [wsgi:error] [pid 23827:tid 139944907491072] [client 146.112.252.218:51473]     from routes import app as application
+[Sun Apr 29 06:57:21.377882 2018] [wsgi:error] [pid 23827:tid 139944907491072] [client 146.112.252.218:51473]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 26, in <module>
+[Sun Apr 29 06:57:21.377925 2018] [wsgi:error] [pid 23827:tid 139944907491072] [client 146.112.252.218:51473]     unsortedArray.append([tempPerson,tempTime,line])
+[Sun Apr 29 06:57:21.377946 2018] [wsgi:error] [pid 23827:tid 139944907491072] [client 146.112.252.218:51473] NameError: name 'tempPerson' is not defined
+[Sun Apr 29 06:57:58.754624 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716] [2018-04-29 06:57:58,753] ERROR in app: Exception on / [GET]
+[Sun Apr 29 06:57:58.754658 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716] Traceback (most recent call last):
+[Sun Apr 29 06:57:58.754664 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 06:57:58.754668 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]     response = self.full_dispatch_request()
+[Sun Apr 29 06:57:58.754673 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 06:57:58.754677 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]     rv = self.handle_user_exception(e)
+[Sun Apr 29 06:57:58.754681 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 06:57:58.754684 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 06:57:58.754688 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 06:57:58.754692 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]     rv = self.dispatch_request()
+[Sun Apr 29 06:57:58.754695 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 06:57:58.754699 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 06:57:58.754703 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sun Apr 29 06:57:58.754707 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]     return render_template('index.html',people=names)
+[Sun Apr 29 06:57:58.754711 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 06:57:58.754714 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]     context, ctx.app)
+[Sun Apr 29 06:57:58.754718 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 06:57:58.754732 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]     rv = template.render(context)
+[Sun Apr 29 06:57:58.754735 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 06:57:58.754739 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 06:57:58.754742 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 06:57:58.754745 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 06:57:58.754749 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 26, in top-level template code
+[Sun Apr 29 06:57:58.754752 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716]     <a class="uranus" title="uranus" href="#uranusspeed">{{people[7]}}</a>
+[Sun Apr 29 06:57:58.754755 2018] [wsgi:error] [pid 23897:tid 139944865527552] [client 146.112.252.197:51716] UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 8: ordinal not in range(128)
+[Sun Apr 29 06:58:00.452998 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574] [2018-04-29 06:58:00,451] ERROR in app: Exception on / [GET]
+[Sun Apr 29 06:58:00.453029 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574] Traceback (most recent call last):
+[Sun Apr 29 06:58:00.453034 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 06:58:00.453037 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]     response = self.full_dispatch_request()
+[Sun Apr 29 06:58:00.453041 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 06:58:00.453045 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]     rv = self.handle_user_exception(e)
+[Sun Apr 29 06:58:00.453048 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 06:58:00.453051 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 06:58:00.453055 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 06:58:00.453058 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]     rv = self.dispatch_request()
+[Sun Apr 29 06:58:00.453061 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 06:58:00.453064 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 06:58:00.453068 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sun Apr 29 06:58:00.453071 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]     return render_template('index.html',people=names)
+[Sun Apr 29 06:58:00.453084 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 06:58:00.453088 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]     context, ctx.app)
+[Sun Apr 29 06:58:00.453091 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 06:58:00.453095 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]     rv = template.render(context)
+[Sun Apr 29 06:58:00.453098 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 06:58:00.453101 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 06:58:00.453104 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 06:58:00.453108 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 06:58:00.453111 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 26, in top-level template code
+[Sun Apr 29 06:58:00.453114 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574]     <a class="uranus" title="uranus" href="#uranusspeed">{{people[7]}}</a>
+[Sun Apr 29 06:58:00.453118 2018] [wsgi:error] [pid 23898:tid 139945016940288] [client 146.112.252.218:47574] UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 8: ordinal not in range(128)
+[Sun Apr 29 06:58:02.789884 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798] [2018-04-29 06:58:02,789] ERROR in app: Exception on / [GET]
+[Sun Apr 29 06:58:02.789931 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798] Traceback (most recent call last):
+[Sun Apr 29 06:58:02.789938 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 06:58:02.789945 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]     response = self.full_dispatch_request()
+[Sun Apr 29 06:58:02.789950 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 06:58:02.789956 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]     rv = self.handle_user_exception(e)
+[Sun Apr 29 06:58:02.789961 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 06:58:02.789967 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 06:58:02.789972 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 06:58:02.789978 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]     rv = self.dispatch_request()
+[Sun Apr 29 06:58:02.789984 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 06:58:02.789989 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 06:58:02.790008 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sun Apr 29 06:58:02.790014 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]     return render_template('index.html',people=names)
+[Sun Apr 29 06:58:02.790019 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 06:58:02.790025 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]     context, ctx.app)
+[Sun Apr 29 06:58:02.790030 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 06:58:02.790036 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]     rv = template.render(context)
+[Sun Apr 29 06:58:02.790041 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 06:58:02.790047 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 06:58:02.790052 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 06:58:02.790058 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 06:58:02.790063 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 26, in top-level template code
+[Sun Apr 29 06:58:02.790069 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798]     <a class="uranus" title="uranus" href="#uranusspeed">{{people[7]}}</a>
+[Sun Apr 29 06:58:02.790075 2018] [wsgi:error] [pid 23897:tid 139944857134848] [client 146.112.252.197:53798] UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 8: ordinal not in range(128)
+[Sun Apr 29 07:00:11.230131 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673] [2018-04-29 07:00:11,229] ERROR in app: Exception on / [GET]
+[Sun Apr 29 07:00:11.230181 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673] Traceback (most recent call last):
+[Sun Apr 29 07:00:11.230187 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 07:00:11.230191 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]     response = self.full_dispatch_request()
+[Sun Apr 29 07:00:11.230195 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 07:00:11.230199 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]     rv = self.handle_user_exception(e)
+[Sun Apr 29 07:00:11.230203 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 07:00:11.230207 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 07:00:11.230210 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 07:00:11.230214 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]     rv = self.dispatch_request()
+[Sun Apr 29 07:00:11.230230 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 07:00:11.230233 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 07:00:11.230237 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sun Apr 29 07:00:11.230240 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]     return render_template('index.html',people=names)
+[Sun Apr 29 07:00:11.230243 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 07:00:11.230247 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]     context, ctx.app)
+[Sun Apr 29 07:00:11.230250 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 07:00:11.230253 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]     rv = template.render(context)
+[Sun Apr 29 07:00:11.230256 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 07:00:11.230260 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 07:00:11.230263 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 07:00:11.230266 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 07:00:11.230270 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 26, in top-level template code
+[Sun Apr 29 07:00:11.230273 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673]     <a class="uranus" title="uranus" href="#uranusspeed">{{people[7]}}</a>
+[Sun Apr 29 07:00:11.230276 2018] [wsgi:error] [pid 23898:tid 139945008547584] [client 146.112.252.218:48673] UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 8: ordinal not in range(128)
+[Sun Apr 29 07:08:33.279668 2018] [wsgi:error] [pid 24125:tid 139945016940288] [client 146.112.252.218:43101] mod_wsgi (pid=24125): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 07:08:33.279734 2018] [wsgi:error] [pid 24125:tid 139945016940288] [client 146.112.252.218:43101] mod_wsgi (pid=24125): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 07:08:33.279772 2018] [wsgi:error] [pid 24125:tid 139945016940288] [client 146.112.252.218:43101] Traceback (most recent call last):
+[Sun Apr 29 07:08:33.279804 2018] [wsgi:error] [pid 24125:tid 139945016940288] [client 146.112.252.218:43101]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 07:08:33.279879 2018] [wsgi:error] [pid 24125:tid 139945016940288] [client 146.112.252.218:43101]     from routes import app as application
+[Sun Apr 29 07:08:33.279896 2018] [wsgi:error] [pid 24125:tid 139945016940288] [client 146.112.252.218:43101]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 07:08:33.279959 2018] [wsgi:error] [pid 24125:tid 139945016940288] [client 146.112.252.218:43101]     readFile = open('/var/www/moose/tracespace/public_html/app/chatdata.csv','r');
+[Sun Apr 29 07:08:33.280009 2018] [wsgi:error] [pid 24125:tid 139945016940288] [client 146.112.252.218:43101] IOError: [Errno 2] No such file or directory: '/var/www/moose/tracespace/public_html/app/chatdata.csv'
+[Sun Apr 29 07:11:53.833908 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115] [2018-04-29 07:11:53,831] ERROR in app: Exception on / [GET]
+[Sun Apr 29 07:11:53.833947 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115] Traceback (most recent call last):
+[Sun Apr 29 07:11:53.833954 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 07:11:53.833960 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]     response = self.full_dispatch_request()
+[Sun Apr 29 07:11:53.833966 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 07:11:53.833972 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]     rv = self.handle_user_exception(e)
+[Sun Apr 29 07:11:53.833978 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 07:11:53.833984 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 07:11:53.833990 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 07:11:53.833996 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]     rv = self.dispatch_request()
+[Sun Apr 29 07:11:53.834001 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 07:11:53.834007 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 07:11:53.834013 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sun Apr 29 07:11:53.834019 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]     return render_template('index.html',people=names)
+[Sun Apr 29 07:11:53.834025 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 07:11:53.834031 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]     context, ctx.app)
+[Sun Apr 29 07:11:53.834036 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 07:11:53.834042 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]     rv = template.render(context)
+[Sun Apr 29 07:11:53.834048 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 07:11:53.834054 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 07:11:53.834060 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 07:11:53.834065 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 07:11:53.834084 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 26, in top-level template code
+[Sun Apr 29 07:11:53.834090 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115]     <a class="uranus" title="uranus" href="#uranusspeed">{{people[7]}}</a>
+[Sun Apr 29 07:11:53.834095 2018] [wsgi:error] [pid 24214:tid 139945016940288] [client 146.112.252.198:36115] UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 8: ordinal not in range(128)
+[Sun Apr 29 07:11:55.874150 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548] [2018-04-29 07:11:55,872] ERROR in app: Exception on / [GET]
+[Sun Apr 29 07:11:55.874185 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548] Traceback (most recent call last):
+[Sun Apr 29 07:11:55.874192 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 07:11:55.874198 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]     response = self.full_dispatch_request()
+[Sun Apr 29 07:11:55.874204 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 07:11:55.874209 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]     rv = self.handle_user_exception(e)
+[Sun Apr 29 07:11:55.874214 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 07:11:55.874220 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 07:11:55.874226 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 07:11:55.874231 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]     rv = self.dispatch_request()
+[Sun Apr 29 07:11:55.874236 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 07:11:55.874242 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 07:11:55.874248 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sun Apr 29 07:11:55.874253 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]     return render_template('index.html',people=names)
+[Sun Apr 29 07:11:55.874259 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 07:11:55.874265 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]     context, ctx.app)
+[Sun Apr 29 07:11:55.874268 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 07:11:55.874272 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]     rv = template.render(context)
+[Sun Apr 29 07:11:55.874275 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 07:11:55.874279 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 07:11:55.874294 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 07:11:55.874298 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 07:11:55.874301 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 26, in top-level template code
+[Sun Apr 29 07:11:55.874305 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548]     <a class="uranus" title="uranus" href="#uranusspeed">{{people[7]}}</a>
+[Sun Apr 29 07:11:55.874308 2018] [wsgi:error] [pid 24276:tid 139944899098368] [client 146.112.252.198:56548] UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 8: ordinal not in range(128)
+[Sun Apr 29 07:11:57.758983 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825] [2018-04-29 07:11:57,758] ERROR in app: Exception on / [GET]
+[Sun Apr 29 07:11:57.759037 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825] Traceback (most recent call last):
+[Sun Apr 29 07:11:57.759045 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 07:11:57.759052 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]     response = self.full_dispatch_request()
+[Sun Apr 29 07:11:57.759058 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 07:11:57.759064 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]     rv = self.handle_user_exception(e)
+[Sun Apr 29 07:11:57.759070 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 07:11:57.759076 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 07:11:57.759082 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 07:11:57.759088 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]     rv = self.dispatch_request()
+[Sun Apr 29 07:11:57.759094 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 07:11:57.759100 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 07:11:57.759106 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sun Apr 29 07:11:57.759113 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]     return render_template('index.html',people=names)
+[Sun Apr 29 07:11:57.759119 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 07:11:57.759125 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]     context, ctx.app)
+[Sun Apr 29 07:11:57.759131 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 07:11:57.759209 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]     rv = template.render(context)
+[Sun Apr 29 07:11:57.759222 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 07:11:57.759228 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 07:11:57.759234 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 07:11:57.759239 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 07:11:57.759246 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 26, in top-level template code
+[Sun Apr 29 07:11:57.759252 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825]     <a class="uranus" title="uranus" href="#uranusspeed">{{people[7]}}</a>
+[Sun Apr 29 07:11:57.759258 2018] [wsgi:error] [pid 24214:tid 139945008547584] [client 146.112.252.198:56825] UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 8: ordinal not in range(128)
+[Sun Apr 29 07:12:48.683920 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337] [2018-04-29 07:12:48,682] ERROR in app: Exception on / [GET]
+[Sun Apr 29 07:12:48.683952 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337] Traceback (most recent call last):
+[Sun Apr 29 07:12:48.683957 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 07:12:48.683961 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]     response = self.full_dispatch_request()
+[Sun Apr 29 07:12:48.683965 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 07:12:48.683969 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]     rv = self.handle_user_exception(e)
+[Sun Apr 29 07:12:48.683973 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 07:12:48.683977 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 07:12:48.683981 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 07:12:48.683985 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]     rv = self.dispatch_request()
+[Sun Apr 29 07:12:48.683988 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 07:12:48.683992 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 07:12:48.683996 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sun Apr 29 07:12:48.684000 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]     return render_template('index.html',people=names)
+[Sun Apr 29 07:12:48.684003 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 07:12:48.684017 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]     context, ctx.app)
+[Sun Apr 29 07:12:48.684021 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 07:12:48.684024 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]     rv = template.render(context)
+[Sun Apr 29 07:12:48.684027 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 07:12:48.684030 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 07:12:48.684034 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 07:12:48.684037 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 07:12:48.684040 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 26, in top-level template code
+[Sun Apr 29 07:12:48.684044 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337]     <a class="uranus" title="uranus" href="#uranusspeed">{{people[7]}}</a>
+[Sun Apr 29 07:12:48.684047 2018] [wsgi:error] [pid 24360:tid 139944907491072] [client 146.112.252.198:56337] UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 8: ordinal not in range(128)
+[Sun Apr 29 07:32:26.044233 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976] [2018-04-29 07:32:26,042] ERROR in app: Exception on / [GET]
+[Sun Apr 29 07:32:26.044281 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976] Traceback (most recent call last):
+[Sun Apr 29 07:32:26.044291 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 07:32:26.044299 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]     response = self.full_dispatch_request()
+[Sun Apr 29 07:32:26.044306 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 07:32:26.044313 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]     rv = self.handle_user_exception(e)
+[Sun Apr 29 07:32:26.044320 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 07:32:26.044327 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 07:32:26.044333 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 07:32:26.044340 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]     rv = self.dispatch_request()
+[Sun Apr 29 07:32:26.044347 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 07:32:26.044354 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 07:32:26.044361 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sun Apr 29 07:32:26.044385 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]     return render_template('index.html',people=names)
+[Sun Apr 29 07:32:26.044392 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 07:32:26.044398 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]     context, ctx.app)
+[Sun Apr 29 07:32:26.044404 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 07:32:26.044410 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]     rv = template.render(context)
+[Sun Apr 29 07:32:26.044415 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 07:32:26.044420 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 07:32:26.044426 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 07:32:26.044432 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 07:32:26.044437 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 122, in top-level template code
+[Sun Apr 29 07:32:26.044443 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976]     <dt>{{people[7]}}</dt>
+[Sun Apr 29 07:32:26.044448 2018] [wsgi:error] [pid 24697:tid 139945016940288] [client 146.112.252.217:59976] UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 8: ordinal not in range(128)
+[Sun Apr 29 07:32:27.615125 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531] [2018-04-29 07:32:27,613] ERROR in app: Exception on / [GET]
+[Sun Apr 29 07:32:27.615221 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531] Traceback (most recent call last):
+[Sun Apr 29 07:32:27.615231 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 07:32:27.615237 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]     response = self.full_dispatch_request()
+[Sun Apr 29 07:32:27.615242 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 07:32:27.615247 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]     rv = self.handle_user_exception(e)
+[Sun Apr 29 07:32:27.615252 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 07:32:27.615257 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 07:32:27.615262 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 07:32:27.615266 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]     rv = self.dispatch_request()
+[Sun Apr 29 07:32:27.615271 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 07:32:27.615293 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 07:32:27.615298 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 10, in index
+[Sun Apr 29 07:32:27.615303 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]     return render_template('index.html',people=names)
+[Sun Apr 29 07:32:27.615308 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 07:32:27.615312 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]     context, ctx.app)
+[Sun Apr 29 07:32:27.615317 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 07:32:27.615322 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]     rv = template.render(context)
+[Sun Apr 29 07:32:27.615326 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 07:32:27.615331 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 07:32:27.615335 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 07:32:27.615340 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 07:32:27.615345 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 122, in top-level template code
+[Sun Apr 29 07:32:27.615349 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531]     <dt>{{people[7]}}</dt>
+[Sun Apr 29 07:32:27.615354 2018] [wsgi:error] [pid 24698:tid 139945016940288] [client 146.112.252.217:57531] UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 8: ordinal not in range(128)
+[Sun Apr 29 09:17:30.967319 2018] [wsgi:error] [pid 27233:tid 139944924276480] [client 146.112.252.217:38294] mod_wsgi (pid=27233): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 09:17:30.967371 2018] [wsgi:error] [pid 27233:tid 139944924276480] [client 146.112.252.217:38294] mod_wsgi (pid=27233): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 09:17:30.967400 2018] [wsgi:error] [pid 27233:tid 139944924276480] [client 146.112.252.217:38294] Traceback (most recent call last):
+[Sun Apr 29 09:17:30.967423 2018] [wsgi:error] [pid 27233:tid 139944924276480] [client 146.112.252.217:38294]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 09:17:30.967478 2018] [wsgi:error] [pid 27233:tid 139944924276480] [client 146.112.252.217:38294]     from routes import app as application
+[Sun Apr 29 09:17:30.967490 2018] [wsgi:error] [pid 27233:tid 139944924276480] [client 146.112.252.217:38294]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 14, in <module>
+[Sun Apr 29 09:17:30.967540 2018] [wsgi:error] [pid 27233:tid 139944924276480] [client 146.112.252.217:38294]     readFile = open('/var/www/moose/tracespace/public_html/app/chatdata4.csv','r');
+[Sun Apr 29 09:17:30.967568 2018] [wsgi:error] [pid 27233:tid 139944924276480] [client 146.112.252.217:38294] IOError: [Errno 2] No such file or directory: '/var/www/moose/tracespace/public_html/app/chatdata4.csv'
+[Sun Apr 29 09:18:14.167673 2018] [wsgi:error] [pid 27354:tid 139944848742144] [client 146.112.252.217:55840] mod_wsgi (pid=27354): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 09:18:14.167706 2018] [wsgi:error] [pid 27354:tid 139944848742144] [client 146.112.252.217:55840] mod_wsgi (pid=27354): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 09:18:14.167806 2018] [wsgi:error] [pid 27354:tid 139944848742144] [client 146.112.252.217:55840] Traceback (most recent call last):
+[Sun Apr 29 09:18:14.167833 2018] [wsgi:error] [pid 27354:tid 139944848742144] [client 146.112.252.217:55840]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 09:18:14.167908 2018] [wsgi:error] [pid 27354:tid 139944848742144] [client 146.112.252.217:55840]     from routes import app as application
+[Sun Apr 29 09:18:14.167922 2018] [wsgi:error] [pid 27354:tid 139944848742144] [client 146.112.252.217:55840]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 102, in <module>
+[Sun Apr 29 09:18:14.167970 2018] [wsgi:error] [pid 27354:tid 139944848742144] [client 146.112.252.217:55840]     names=[random.choice(names),a[0],getDirtiest(),random.choice(names),a[1],random.choice(names),random.choice(names),random.choice(names)]
+[Sun Apr 29 09:18:14.167996 2018] [wsgi:error] [pid 27354:tid 139944848742144] [client 146.112.252.217:55840] NameError: name 'random' is not defined
+[Sun Apr 29 09:18:15.480106 2018] [wsgi:error] [pid 27416:tid 139944899098368] [client 146.112.252.217:36216] mod_wsgi (pid=27416): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 09:18:15.480153 2018] [wsgi:error] [pid 27416:tid 139944899098368] [client 146.112.252.217:36216] mod_wsgi (pid=27416): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 09:18:15.480285 2018] [wsgi:error] [pid 27416:tid 139944899098368] [client 146.112.252.217:36216] Traceback (most recent call last):
+[Sun Apr 29 09:18:15.480330 2018] [wsgi:error] [pid 27416:tid 139944899098368] [client 146.112.252.217:36216]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 09:18:15.480441 2018] [wsgi:error] [pid 27416:tid 139944899098368] [client 146.112.252.217:36216]     from routes import app as application
+[Sun Apr 29 09:18:15.480464 2018] [wsgi:error] [pid 27416:tid 139944899098368] [client 146.112.252.217:36216]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 102, in <module>
+[Sun Apr 29 09:18:15.480548 2018] [wsgi:error] [pid 27416:tid 139944899098368] [client 146.112.252.217:36216]     names=[random.choice(names),a[0],getDirtiest(),random.choice(names),a[1],random.choice(names),random.choice(names),random.choice(names)]
+[Sun Apr 29 09:18:15.480591 2018] [wsgi:error] [pid 27416:tid 139944899098368] [client 146.112.252.217:36216] NameError: name 'random' is not defined
+[Sun Apr 29 09:18:46.296030 2018] [wsgi:error] [pid 27508:tid 139944907491072] [client 146.112.252.217:43428] mod_wsgi (pid=27508): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 09:18:46.296071 2018] [wsgi:error] [pid 27508:tid 139944907491072] [client 146.112.252.217:43428] mod_wsgi (pid=27508): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 09:18:46.296198 2018] [wsgi:error] [pid 27508:tid 139944907491072] [client 146.112.252.217:43428] Traceback (most recent call last):
+[Sun Apr 29 09:18:46.296231 2018] [wsgi:error] [pid 27508:tid 139944907491072] [client 146.112.252.217:43428]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 09:18:46.296310 2018] [wsgi:error] [pid 27508:tid 139944907491072] [client 146.112.252.217:43428]     from routes import app as application
+[Sun Apr 29 09:18:46.296334 2018] [wsgi:error] [pid 27508:tid 139944907491072] [client 146.112.252.217:43428]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 102, in <module>
+[Sun Apr 29 09:18:46.296386 2018] [wsgi:error] [pid 27508:tid 139944907491072] [client 146.112.252.217:43428]     names=[random.choice(names),a[0],getDirtiest(),random.choice(names),a[1],random.choice(names),random.choice(names),random.choice(names)]
+[Sun Apr 29 09:18:46.296411 2018] [wsgi:error] [pid 27508:tid 139944907491072] [client 146.112.252.217:43428] NameError: name 'random' is not defined
+[Sun Apr 29 09:19:45.105537 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125] [2018-04-29 09:19:45,104] ERROR in app: Exception on / [GET]
+[Sun Apr 29 09:19:45.105572 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125] Traceback (most recent call last):
+[Sun Apr 29 09:19:45.105577 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 09:19:45.105581 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]     response = self.full_dispatch_request()
+[Sun Apr 29 09:19:45.105586 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 09:19:45.105590 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]     rv = self.handle_user_exception(e)
+[Sun Apr 29 09:19:45.105594 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 09:19:45.105598 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 09:19:45.105601 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 09:19:45.105605 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]     rv = self.dispatch_request()
+[Sun Apr 29 09:19:45.105609 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 09:19:45.105613 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 09:19:45.105616 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 11, in index
+[Sun Apr 29 09:19:45.105620 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]     return render_template('index.html',people=nameroos,names=names)
+[Sun Apr 29 09:19:45.105624 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 09:19:45.105628 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]     context, ctx.app)
+[Sun Apr 29 09:19:45.105631 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 09:19:45.105635 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]     rv = template.render(context)
+[Sun Apr 29 09:19:45.105638 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 09:19:45.105642 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 09:19:45.105658 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 09:19:45.105662 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 09:19:45.105665 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 19, in top-level template code
+[Sun Apr 29 09:19:45.105669 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125]     <a class="sun" title="sun" href="#sunspeed">{{names[0]}}</a>
+[Sun Apr 29 09:19:45.105672 2018] [wsgi:error] [pid 27596:tid 139944831956736] [client 146.112.252.217:54125] UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)
+[Sun Apr 29 09:19:47.506792 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546] [2018-04-29 09:19:47,504] ERROR in app: Exception on / [GET]
+[Sun Apr 29 09:19:47.506830 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546] Traceback (most recent call last):
+[Sun Apr 29 09:19:47.506837 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 09:19:47.506843 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]     response = self.full_dispatch_request()
+[Sun Apr 29 09:19:47.506848 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 09:19:47.506854 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]     rv = self.handle_user_exception(e)
+[Sun Apr 29 09:19:47.506860 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 09:19:47.506865 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 09:19:47.506870 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 09:19:47.506876 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]     rv = self.dispatch_request()
+[Sun Apr 29 09:19:47.506881 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 09:19:47.506886 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 09:19:47.506892 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 11, in index
+[Sun Apr 29 09:19:47.506897 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]     return render_template('index.html',people=nameroos,names=names)
+[Sun Apr 29 09:19:47.506903 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 09:19:47.506908 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]     context, ctx.app)
+[Sun Apr 29 09:19:47.506913 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 09:19:47.506933 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]     rv = template.render(context)
+[Sun Apr 29 09:19:47.506939 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 09:19:47.506944 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 09:19:47.506950 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 09:19:47.506955 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 09:19:47.506960 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 19, in top-level template code
+[Sun Apr 29 09:19:47.506966 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546]     <a class="sun" title="sun" href="#sunspeed">{{names[0]}}</a>
+[Sun Apr 29 09:19:47.506971 2018] [wsgi:error] [pid 27597:tid 139944848742144] [client 146.112.252.217:44546] UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)
+[Sun Apr 29 10:23:49.148423 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302] [2018-04-29 10:23:49,146] ERROR in app: Exception on / [GET]
+[Sun Apr 29 10:23:49.148465 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302] Traceback (most recent call last):
+[Sun Apr 29 10:23:49.148471 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+[Sun Apr 29 10:23:49.148475 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]     response = self.full_dispatch_request()
+[Sun Apr 29 10:23:49.148479 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+[Sun Apr 29 10:23:49.148484 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]     rv = self.handle_user_exception(e)
+[Sun Apr 29 10:23:49.148488 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+[Sun Apr 29 10:23:49.148492 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 10:23:49.148495 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+[Sun Apr 29 10:23:49.148499 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]     rv = self.dispatch_request()
+[Sun Apr 29 10:23:49.148503 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+[Sun Apr 29 10:23:49.148507 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]     return self.view_functions[rule.endpoint](**req.view_args)
+[Sun Apr 29 10:23:49.148511 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 11, in index
+[Sun Apr 29 10:23:49.148515 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]     return render_template('index.html',people=nameroos,names=names)
+[Sun Apr 29 10:23:49.148519 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+[Sun Apr 29 10:23:49.148534 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]     context, ctx.app)
+[Sun Apr 29 10:23:49.148537 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]   File "/usr/local/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+[Sun Apr 29 10:23:49.148541 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]     rv = template.render(context)
+[Sun Apr 29 10:23:49.148544 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 1008, in render
+[Sun Apr 29 10:23:49.148547 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]     return self.environment.handle_exception(exc_info, True)
+[Sun Apr 29 10:23:49.148550 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]   File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 780, in handle_exception
+[Sun Apr 29 10:23:49.148554 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]     reraise(exc_type, exc_value, tb)
+[Sun Apr 29 10:23:49.148557 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]   File "/var/www/moose/tracespace/public_html/app/templates/index.html", line 119, in top-level template code
+[Sun Apr 29 10:23:49.148560 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302]     <dt>{{people[8]+"\\nNo comment."}}</dt>
+[Sun Apr 29 10:23:49.148564 2018] [wsgi:error] [pid 29737:tid 139944840349440] [client 146.112.252.217:40302] UndefinedError: list object has no element 8
+[Sun Apr 29 10:24:51.427563 2018] [wsgi:error] [pid 29857:tid 139944840349440] [client 146.112.252.198:35562] mod_wsgi (pid=29857): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 10:24:51.427604 2018] [wsgi:error] [pid 29857:tid 139944840349440] [client 146.112.252.198:35562] mod_wsgi (pid=29857): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 10:24:51.427710 2018] [wsgi:error] [pid 29857:tid 139944840349440] [client 146.112.252.198:35562] Traceback (most recent call last):
+[Sun Apr 29 10:24:51.427739 2018] [wsgi:error] [pid 29857:tid 139944840349440] [client 146.112.252.198:35562]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 10:24:51.427819 2018] [wsgi:error] [pid 29857:tid 139944840349440] [client 146.112.252.198:35562]     from routes import app as application
+[Sun Apr 29 10:24:51.427832 2018] [wsgi:error] [pid 29857:tid 139944840349440] [client 146.112.252.198:35562]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 115, in <module>
+[Sun Apr 29 10:24:51.427900 2018] [wsgi:error] [pid 29857:tid 139944840349440] [client 146.112.252.198:35562]     c=getCleanest()
+[Sun Apr 29 10:24:51.427934 2018] [wsgi:error] [pid 29857:tid 139944840349440] [client 146.112.252.198:35562] NameError: name 'getCleanest' is not defined
+[Sun Apr 29 10:24:52.802126 2018] [wsgi:error] [pid 29919:tid 139944899098368] [client 146.112.252.198:32775] mod_wsgi (pid=29919): Target WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi' cannot be loaded as Python module.
+[Sun Apr 29 10:24:52.802164 2018] [wsgi:error] [pid 29919:tid 139944899098368] [client 146.112.252.198:32775] mod_wsgi (pid=29919): Exception occurred processing WSGI script '/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi'.
+[Sun Apr 29 10:24:52.802286 2018] [wsgi:error] [pid 29919:tid 139944899098368] [client 146.112.252.198:32775] Traceback (most recent call last):
+[Sun Apr 29 10:24:52.802318 2018] [wsgi:error] [pid 29919:tid 139944899098368] [client 146.112.252.198:32775]   File "/var/www/moose/tracespace/public_html/app/tracespace.xyz.wsgi", line 6, in <module>
+[Sun Apr 29 10:24:52.802412 2018] [wsgi:error] [pid 29919:tid 139944899098368] [client 146.112.252.198:32775]     from routes import app as application
+[Sun Apr 29 10:24:52.802427 2018] [wsgi:error] [pid 29919:tid 139944899098368] [client 146.112.252.198:32775]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 115, in <module>
+[Sun Apr 29 10:24:52.802482 2018] [wsgi:error] [pid 29919:tid 139944899098368] [client 146.112.252.198:32775]     c=getCleanest()
+[Sun Apr 29 10:24:52.802509 2018] [wsgi:error] [pid 29919:tid 139944899098368] [client 146.112.252.198:32775] NameError: name 'getCleanest' is not defined
+[Sun Apr 29 10:41:20.614260 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819] [2018-04-29 10:41:20,610] ERROR in app: Exception on /uploader [POST], referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614301 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819] Traceback (most recent call last):, referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614310 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app, referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614317 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819]     response = self.full_dispatch_request(), referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614323 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request, referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614330 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819]     rv = self.handle_user_exception(e), referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614336 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception, referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614342 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819]     reraise(exc_type, exc_value, tb), referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614348 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request, referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614355 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819]     rv = self.dispatch_request(), referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614361 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request, referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614367 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819]     return self.view_functions[rule.endpoint](**req.view_args), referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614373 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 17, in upload_file, referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614379 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819]     f.save(f.filename), referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614385 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819]   File "/usr/local/lib/python2.7/dist-packages/werkzeug/datastructures.py", line 2725, in save, referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614391 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819]     dst = open(dst, 'wb'), referer: http://tracespace.xyz/
+[Sun Apr 29 10:41:20.614397 2018] [wsgi:error] [pid 30887:tid 139944899098368] [client 146.112.252.198:34819] IOError: [Errno 13] Permission denied: u'chatdata.csv', referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963763 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188] [2018-04-29 10:42:04,962] ERROR in app: Exception on /uploader [POST], referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963799 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188] Traceback (most recent call last):, referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963805 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app, referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963809 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188]     response = self.full_dispatch_request(), referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963813 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request, referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963817 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188]     rv = self.handle_user_exception(e), referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963821 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception, referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963825 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188]     reraise(exc_type, exc_value, tb), referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963829 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request, referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963833 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188]     rv = self.dispatch_request(), referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963837 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188]   File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request, referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963841 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188]     return self.view_functions[rule.endpoint](**req.view_args), referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963845 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188]   File "/var/www/moose/tracespace/public_html/app/routes.py", line 17, in upload_file, referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963848 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188]     f.save(f.filename), referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963852 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188]   File "/usr/local/lib/python2.7/dist-packages/werkzeug/datastructures.py", line 2725, in save, referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963856 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188]     dst = open(dst, 'wb'), referer: http://tracespace.xyz/
+[Sun Apr 29 10:42:04.963860 2018] [wsgi:error] [pid 30979:tid 139945016940288] [client 146.112.252.198:58188] IOError: [Errno 13] Permission denied: u'chatdata3.csv', referer: http://tracespace.xyz/
